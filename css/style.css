@@ -164,21 +164,34 @@ hr {
 }
 
 @media (min-width: 800px) {
-	.header_pub-info {
+
+	header { 
+	background-color: #64bcda; }
+
+	header .header_pub-info {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		width: 100%;
+		
 	}
 
-	.main-article {
-		width: 60%;
+	.col-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.6rem;
+	}
+	
+	article.main-article {
+		flex: 3;
 		border-radius: 0.6rem;
 		margin: 0;
 	}
 
-	.main-sidebar {
-		width: 40%;
+	aside.main-sidebar {
+		flex: 2;
 		border-radius: 0.6rem;
 		margin: 0;
 	}
+	
 }
